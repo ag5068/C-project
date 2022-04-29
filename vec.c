@@ -12,10 +12,10 @@ Vec_int_2d create_2d_vec(int row_count, int col_count) {
 }
 
 int get_element_2d_vec(Vec_int_2d vec, int row_index, int col_index) {
-  return vec.element_ptr[row_index * vec.row_count + col_index];
+  return vec.element_ptr[row_index * vec.col_count + col_index];
 }
 
 void set_element_2d_vec(Vec_int_2d vec, int row_index, int col_index,
                         int value) {
-  vec.element_ptr[row_index * vec.row_count + col_index] = value;
+  vec.element_ptr[row_index * vec.col_count + col_index] = value;
 }
