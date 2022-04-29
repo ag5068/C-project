@@ -7,7 +7,7 @@ int main() {
   printf("Enter rows and columns: ");
   scanf("%d %d", &r, &c);
   a = create_2d_vec(r, c);
-  transpose = create_2d_vec(r, c);
+  transpose = create_2d_vec(c, r);
 
   printf("\nEnter matrix elements:\n");
   for (int i = 0; i < r; ++i)
